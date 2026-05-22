@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>
+        // Redirect any path (like /chats) back to the root if this file is loaded.
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html' && window.location.pathname !== '/archived.html') {
+            window.location.replace('/');
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Talk - System Update</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
